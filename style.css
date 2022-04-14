@@ -176,8 +176,9 @@ body {
     background-color: var(--button-bg-color-hover);
 }
 
-.container__middle {
-    border: none, 1px solid #e6ecf0;
+.content__middle {
+    border-right: 1px solid #e6ecf0;
+    border-left: 1px solid #e6ecf0;
 }
 
 .tweet {
