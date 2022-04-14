@@ -12,3 +12,19 @@
     height: 29px;
     filter: invert(46%) sepia(99%) saturate(1449%) hue-rotate(176deg) brightness(100%) contrast(91%);
 }
+
+.sidebar__menu {
+    position: fixed;
+}
+
+.sidebar__menu__item {
+    font-size: 22px;   
+    color: #0F141A;
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    height: 28px;
+    margin-right: 20px;
+}
