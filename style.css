@@ -33,7 +33,7 @@ body {
     position: sticky;
     top: 0;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     height: 100vh;
     overflow-x: scroll;
     padding-top: 8px;
