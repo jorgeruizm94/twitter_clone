@@ -268,4 +268,42 @@ body {
     width: 20px;
 }
 
+.content__right__main {
+    margin-top: 48px;
+    padding-top: 8px;
+}
+
+.search__box {
+    position: fixed;
+    height: 48px;
+    padding: 16px 0;
+    box-sizing: border-box;
+    width: 350px;
+    background: rgb(255, 255, 255);
+}
+
+.search__input {
+    display: flex;
+    background: #EFF3F4;
+    border-radius: 9999px;
+    padding: 12px 24px;
+}
+
+.search__input__icon {
+    margin-right: 16px;
+}
+
+.search__input__icon svg {
+    height: 20px;
+    width: 20px;
+    color: black;
+}
+
+.search__input__field input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: .95rem;
+}
+
 
