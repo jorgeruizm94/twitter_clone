@@ -31,9 +31,7 @@ body {
 }
 
 .content__right {
-    position: fixed;
     width: 350px;
-    
 }
 
 .sidebar {
@@ -273,13 +271,15 @@ body {
 .content__right__main {
     margin: 68px 0 0 16px;
     padding-top: 8px;
+    width: 100%;
 }
 
 .search__box {
     position: fixed;
-    padding: 8px 16px 16px;
+    padding: 8px 0 16px 16px;
     box-sizing: border-box;
-    background: rgb(255, 255, 255); 
+    background: rgb(255, 255, 255);
+    width: 350px;
 }
 
 .search__input {
@@ -370,27 +370,86 @@ body {
     border-radius: 12px;
 }
 
-.wh {
-    border-radius: 15px;
-    background: #f5f8fa;
-
+.show__more__container {
+    margin-top: 24px;
 }
 
-.wh__block {
-border-bottom: 1px solid #e6ecf0;
-padding: 10px 15px;
+.show__more {
+    color: var(--tertiary-font-color);
+    text-decoration: none;
+    font-size: 0.95rem;
 }
 
-.wh__heading {
-font-size: 19px;
-font-weight: bold;
-color: #14171a;
+.show__more:hover {
+    text-decoration: underline;
 }
 
-.wh__information {
-
+.follow__suggestions {
+    background: #EFF3F4;
+    border-radius: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    position: sticky;
 }
 
-.wh__name {
+.follow__suggestions__title {
+    margin: 0;
+    font-size: 1.2rem;
+}
 
+.follow__suggestions__container {
+    padding: 0;
+    list-style: none;
+}
+
+.follow__suggestions__container li {
+    margin-bottom: 16px;
+}
+
+.follow__suggestions__container li:last-child {
+    margin-bottom: 0;
+}
+
+.follow__suggestion {
+    display: flex;
+    gap: 8px;
+}
+
+.follow__suggestion__image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.follow__suggestion__account {
+    flex-grow: 1;
+}
+
+.follow__suggestion__account h4 {
+    margin: 0;
+    font-size: .95rem;
+    line-height: 1.5rem;
+}
+
+.follow__suggestion__account h5 {
+    color: var(--seconday-font-color);
+    line-height: 1.1rem;
+    font-size: .95rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.follow__suggestion__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.follow__button {
+    background: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 9999px;
 }
