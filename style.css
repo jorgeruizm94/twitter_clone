@@ -216,7 +216,8 @@ body {
 }
 
 .tweet__authorname {
-    font-size: 20px;
+    font-size: .9rem;
+    line-height: 1rem;
     font-weight: 700;
     color: var(--primary-font-color);
     margin-right: 5px;
@@ -224,12 +225,32 @@ body {
 
 .tweet__authorusername {
     color: var(--seconday-font-color);
-    font-size: 18px;
+    font-size: .9rem;
+    line-height: 1rem;
 }
 
 .tweet__publishtime {
     margin-left: 5px;
     color: var(--seconday-font-color);
+    font-size: .9rem;
+    line-height: 1rem;
+}
+
+.tweet__content {
+    padding-top: 8px;
+    font-size: .9rem;
+    line-height: 1rem;
+}
+
+.tweet__content img {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 16px;
+}
+
+.tweet__content img.no__text {
+    margin-top: 0;
 }
 
 .tweets__container {
@@ -242,7 +263,7 @@ body {
     background-color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     height: 48px;
-    padding: 16px 8px;
+    padding: 16px;
     box-sizing: border-box;
     width: calc(575px - 2px);
 }
@@ -390,7 +411,6 @@ body {
     padding: 16px;
     box-sizing: border-box;
     margin-top: 8px;
-    position: sticky;
 }
 
 .follow__suggestions__title {
