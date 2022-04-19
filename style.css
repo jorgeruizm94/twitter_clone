@@ -27,11 +27,13 @@ body {
 
 .content__right__container {
     margin-left: 16px;
+    display: flex
 }
 
 .content__right {
     position: fixed;
     width: 350px;
+    
 }
 
 .sidebar {
@@ -277,8 +279,7 @@ body {
     position: fixed;
     padding: 8px 16px 16px;
     box-sizing: border-box;
-    width: 350px;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255); 
 }
 
 .search__input {
@@ -367,4 +368,29 @@ body {
     background-position: center;
     background-size: cover;
     border-radius: 12px;
+}
+
+.wh {
+    border-radius: 15px;
+    background: #f5f8fa;
+
+}
+
+.wh__block {
+border-bottom: 1px solid #e6ecf0;
+padding: 10px 15px;
+}
+
+.wh__heading {
+font-size: 19px;
+font-weight: bold;
+color: #14171a;
+}
+
+.wh__information {
+
+}
+
+.wh__name {
+
 }
