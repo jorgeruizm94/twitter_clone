@@ -453,3 +453,23 @@ body {
     padding: 8px 16px;
     border-radius: 9999px;
 }
+
+.footer {
+    margin-top: 24px;
+    padding: 0 8px;
+}
+
+.footer a, span, p {
+    color: var(--seconday-font-color);
+    font-size: 0.75rem;
+    padding-right: 16px;
+    text-decoration: none;
+}
+
+.footer p {
+    margin: 8px 0 0 0;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
