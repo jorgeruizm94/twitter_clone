@@ -31,9 +31,7 @@ body {
 }
 
 .content__right {
-    position: fixed;
     width: 350px;
-    
 }
 
 .sidebar {
@@ -218,7 +216,8 @@ body {
 }
 
 .tweet__authorname {
-    font-size: 20px;
+    font-size: .9rem;
+    line-height: 1rem;
     font-weight: 700;
     color: var(--primary-font-color);
     margin-right: 5px;
@@ -226,12 +225,32 @@ body {
 
 .tweet__authorusername {
     color: var(--seconday-font-color);
-    font-size: 18px;
+    font-size: .9rem;
+    line-height: 1rem;
 }
 
 .tweet__publishtime {
     margin-left: 5px;
     color: var(--seconday-font-color);
+    font-size: .9rem;
+    line-height: 1rem;
+}
+
+.tweet__content {
+    padding-top: 8px;
+    font-size: .9rem;
+    line-height: 1rem;
+}
+
+.tweet__content img {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 16px;
+}
+
+.tweet__content img.no__text {
+    margin-top: 0;
 }
 
 .tweets__container {
@@ -244,7 +263,7 @@ body {
     background-color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     height: 48px;
-    padding: 16px 8px;
+    padding: 16px;
     box-sizing: border-box;
     width: calc(575px - 2px);
 }
@@ -273,21 +292,15 @@ body {
 .content__right__main {
     margin: 68px 0 0 16px;
     padding-top: 8px;
+    width: 100%;
 }
 
 .search__box {
-<<<<<<< HEAD
-    
- 
-    padding: 16px 0;
-=======
     position: fixed;
-    padding: 8px 16px 16px;
->>>>>>> 4542c0f8dba153e3095ddff7ae1d9d9f5914353a
+    padding: 8px 0 16px 16px;
     box-sizing: border-box;
- 
     background: rgb(255, 255, 255);
-   
+    width: 350px;
 }
 
 .search__input {
@@ -314,27 +327,169 @@ body {
     font-size: .95rem;
 }
 
-.wh {
-    border-radius: 15px;
-    background: #f5f8fa;
-
+.news__feed {
+    background: #EFF3F4;
+    border-radius: 16px;
+    padding: 16px;
+    box-sizing: border-box;
 }
 
-.wh__block {
-border-bottom: 1px solid #e6ecf0;
-padding: 10px 15px;
+.news__feed__title {
+    margin: 0;
+    font-size: 1.2rem;
 }
 
-.wh__heading {
-font-size: 19px;
-font-weight: bold;
-color: #14171a;
+.news__feed__container {
+    padding: 0;
+    list-style: none;
 }
 
-.wh__information {
-
+.news__feed__container li {
+    margin-bottom: 32px;
 }
 
-.wh__name {
+.news__feed__container li:last-child {
+    margin-bottom: 0;
+}
 
+.news__content {
+    display: flex;
+}
+
+.news__text {
+    flex-grow: 1;
+}
+
+.news__text h5 {
+    color: var(--seconday-font-color);
+    line-height: 1.2rem;
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.news__text h4 {
+    margin: 0;
+    font-size: .95rem;
+    line-height: 1.5rem;
+}
+
+.news__text a {
+    color: var(--tertiary-font-color);
+    text-decoration: none;
+}
+
+.news__text a:hover {
+    text-decoration: underline;
+}
+
+.news__image {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.show__more__container {
+    margin-top: 24px;
+}
+
+.show__more {
+    color: var(--tertiary-font-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.show__more:hover {
+    text-decoration: underline;
+}
+
+.follow__suggestions {
+    background: #EFF3F4;
+    border-radius: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+.follow__suggestions__title {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.follow__suggestions__container {
+    padding: 0;
+    list-style: none;
+}
+
+.follow__suggestions__container li {
+    margin-bottom: 16px;
+}
+
+.follow__suggestions__container li:last-child {
+    margin-bottom: 0;
+}
+
+.follow__suggestion {
+    display: flex;
+    gap: 8px;
+}
+
+.follow__suggestion__image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.follow__suggestion__account {
+    flex-grow: 1;
+}
+
+.follow__suggestion__account h4 {
+    margin: 0;
+    font-size: .95rem;
+    line-height: 1.5rem;
+}
+
+.follow__suggestion__account h5 {
+    color: var(--seconday-font-color);
+    line-height: 1.1rem;
+    font-size: .95rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.follow__suggestion__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.follow__button {
+    background: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 9999px;
+}
+
+.footer {
+    margin-top: 24px;
+    padding: 0 8px;
+}
+
+.footer a, span, p {
+    color: var(--seconday-font-color);
+    font-size: 0.75rem;
+    padding-right: 16px;
+    text-decoration: none;
+}
+
+.footer p {
+    margin: 8px 0 0 0;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
