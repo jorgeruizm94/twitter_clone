@@ -269,14 +269,13 @@ body {
 }
 
 .content__right__main {
-    margin-top: 48px;
+    margin: 68px 0 0 16px;
     padding-top: 8px;
 }
 
 .search__box {
     position: fixed;
-    height: 48px;
-    padding: 16px 0;
+    padding: 8px 16px 16px;
     box-sizing: border-box;
     width: 350px;
     background: rgb(255, 255, 255);
